@@ -189,4 +189,23 @@ public class StringExercises {
                         : Character.toUpperCase(word.charAt(0)) + word.substring(1).toLowerCase())
                 .collect(Collectors.joining(" "));
     }
+
+    public static void run() {
+        System.out.println("\n===== StringExercises =====\n");
+        System.out.println("1.  lengthWithoutSpaces:  " + lengthWithoutSpaces("Bonjour le monde !"));
+        System.out.println("2.  greet:                " + greet("jean-pierre"));
+        System.out.println("3.  endsWithExclamation:  " + endsWithExclamation("Je suis très satisfait !"));
+        System.out.println("4.  reverseWords:         " + reverseWords("Je mange une pomme"));
+        System.out.println("5.  countOccurrences:     " + countOccurrences("Bonjour le monde", 'l'));
+        System.out.println("6.  toCamelCase:          " + toCamelCase("user_first_name"));
+        System.out.println("7.  countVowels:          " + countVowels("Bonjour le monde"));
+        System.out.println("8.  alternateCase:        " + alternateCase("bonjour"));
+        System.out.println("9.  removeDuplicates:     " + removeDuplicates("Bonjouuuur !!! J'ai besoiiiin d'aide...."));
+        System.out.println("10. extractInitials:      " + extractInitials("Jean Martin Dupont"));
+        System.out.println("11. maskString:           " + maskString("1234567890123456", 4));
+        System.out.println("12. isPalindrome:         " + isPalindrome("kayak"));
+        System.out.println("13. longestSequence:      " + longestSequence("aaabbbbbcccc"));
+        System.out.println("14. truncate:             " + truncate("Ceci est une très longue description d'un produit", 20));
+        System.out.println("15. capitalizeWords:      " + capitalizeWords("bienvenue sur notre site web"));
+    }
 }
